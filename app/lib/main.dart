@@ -10,7 +10,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'IMDb 2020台大資管營',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Color(0xfffae8c5),
+        primaryColorDark: Color(0xffd7bb8c),
+        accentColor: Color(0xff203c51),
+        backgroundColor: Color(0xfffafafa),
       ),
       home: TempIndexPage(),
       routes: route,
@@ -22,6 +25,7 @@ class TempIndexPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).primaryColor,
       body: Center(
         child: Column(
           children: <Widget>[
